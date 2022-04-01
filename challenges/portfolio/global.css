@@ -33,11 +33,10 @@ main .container {
     max-width: 1920px;
     width: 100%;
 
-    padding: 40px;
+    padding: 2.5rem;
 
     display: flex;
-
-    gap: 60px;
+    gap: 3.75rem;
 }
 
 main .container .side-bar {
@@ -45,9 +44,8 @@ main .container .side-bar {
     width: 100%;
 
     display: flex;
-    gap: 30px;
-
     flex-direction: column;
+    gap: 2rem;
 }
 
 main .container .side-bar .profile-card {
@@ -67,20 +65,20 @@ main .container .side-bar .profile-card img {
     width: 128px;
     height: 128px;
 
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
 
     border-radius: 50%;
     border: 2px solid var(--border-color);
 }
 
 main .container .side-bar .profile-card h2 {
-    margin-bottom: 10px;
+    margin-bottom: .625rem;
 
-    font-size: 23px;
+    font-size: 1.5rem;
 }
 
 main .container .side-bar .profile-card p {
-    font-size: 13px;
+    font-size: .875rem;
     font-weight: 300;
 }
 
@@ -89,24 +87,24 @@ main .container .side-bar .profile-socials {
 
     background-color: var(--bg-cards);
 
-    padding: 30px;
+    padding: 2rem;
 
     border-radius: 20px;
 
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 main .container .side-bar .profile-socials .social {
     display: flex;
     align-items: center;
-
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 main .container .side-bar .profile-socials p, main .container .side-bar .profile-socials a {
-    font-size: 13px;
+    font-size: .875rem;
+    text-decoration: none;
 
     color: var(--text-color);
 
@@ -124,31 +122,30 @@ main .container .side-bar .profile-techs {
 
     background-color: var(--bg-cards);
 
-    padding: 30px;
+    padding: 2rem;
 
     border-radius: 20px;
 
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 main .container .side-bar .profile-techs h3 {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 main .container .side-bar .profile-techs .profile-techs-content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
-    gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
 }
 
 main .container .side-bar .profile-techs .profile-techs-content p {
     background-color: var(--bg-techs);
     color: var(--body-bg-color);
 
-    font-size: 10px;
+    font-size: .625rem;
     font-weight: 800;
 
     text-transform: uppercase;
@@ -156,7 +153,7 @@ main .container .side-bar .profile-techs .profile-techs-content p {
 
     border-radius: 30px;
 
-    padding: 4px;
+    padding: .25rem;
 
     transition: all 300ms;
 }
@@ -172,13 +169,13 @@ main .container .side-bar .profile-experiences, main .container .side-bar .profi
 
     background-color: var(--bg-cards);
 
-    padding: 30px;
+    padding: 2rem;
 
     border-radius: 20px;
 
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 main .container .side-bar .profile-experiences .profile-experiences-content .profile-experiences-list, main .container .side-bar .profile-education .profile-education-content .profile-education-list {
@@ -186,21 +183,21 @@ main .container .side-bar .profile-experiences .profile-experiences-content .pro
 }
 
 main .container .side-bar .profile-experiences .profile-experiences-content ul, main .container .side-bar .profile-education .profile-education-content ul {
-    margin-left: 40px;
+    margin-left: 2.5rem;
 }
 
 main .container .side-bar .profile-experiences .profile-experiences-content ul li, main .container .side-bar .profile-education .profile-education-content ul li {
-    font-size: 14px;
+    font-size: .875rem;
     font-weight: 800;
 }
 
 main .container .side-bar .profile-experiences .profile-experiences-content ul p, main .container .side-bar .profile-education .profile-education-content ul p {
     font-weight: 400;
-    font-size: 12px;
+    font-size: .75rem;
 }
 
 main .container .side-bar .profile-experiences .profile-experiences-content ul p.profile-experiences-title, main .container .side-bar .profile-education .profile-education-content ul p.profile-education-title {
-    font-size: 12px;
+    font-size: .75rem;
     font-weight: 600;
 }
 
@@ -208,9 +205,8 @@ main .container .content {
     width: 100%;
 
     display: flex;
-    gap: 30px;
-
     flex-direction: column;
+    gap: 2rem;
 }
 
 main .container .content .title, main .container .content .subtitle {
@@ -220,7 +216,7 @@ main .container .content .title, main .container .content .subtitle {
     align-items: center;
     justify-content: space-between;
 
-    padding: 30px;
+    padding: 2rem;
 
     background-color: var(--bg-cards);
 
@@ -240,12 +236,11 @@ main .container .content .title a:hover {
 main .container .content .profile-projects {
     display: flex;
     align-items: center;
-
-    gap: 30px;
+    gap: 2rem;
 }
 
 main .container .content .profile-projects .project-wrapper {
-    max-width: 461px;
+    max-width: 460px;
     width: 100%;
 
     cursor: pointer;
@@ -253,12 +248,11 @@ main .container .content .profile-projects .project-wrapper {
     background-color: var(--bg-cards);
 
     border-radius: 30px;
+    border: 1px solid var(--bg-cards);
 
-    padding: 30px;
+    padding: 2rem;
 
     transition: border 300ms;
-
-    border: 1px solid var(--bg-cards);
 }
 
 main .container .content .profile-projects .project-wrapper:hover {
@@ -268,33 +262,32 @@ main .container .content .profile-projects .project-wrapper:hover {
 main .container .content .profile-projects .project-wrapper .project-title {
     display: flex;
     align-items: center;
-
-    gap: 16px;
+    gap: 1rem;
 }
 
 main .container .content .profile-projects .project-wrapper .project-body {
-    margin: 20px 0 20px 0;
-    font-size: 14px;
+    margin: 1.25rem 0 1.25rem 0;
+
+    font-size: .875rem;
 }
 
 main .container .content .profile-projects .project-wrapper .project-footer {
     display: flex;
-
     justify-content: space-between;
 
-    font-size: 14px;
+    font-size: .875rem;
 }
 
 main .container .content .profile-projects .project-wrapper .project-footer .project-status {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 1rem;
 }
 
 main .container .content .profile-projects .project-wrapper .project-footer .project-status .project-stars, main .container .content .profile-projects .project-wrapper .project-footer .project-status .project-forks {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: .5rem;
 
     transition: all 300ms;
 }
@@ -304,8 +297,8 @@ main .container .content .profile-projects .project-wrapper .project-footer .pro
 }
 
 main .container .content .profile-projects .project-wrapper .project-footer .project-status .project-stars img, main .container .content .profile-projects .project-wrapper .project-footer .project-status .project-forks img {
-    width: 20px;
-    height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
 }
 
 main .container .content .profile-projects .project-wrapper .project-footer .project-language {
@@ -316,8 +309,8 @@ main .container .content .profile-projects .project-wrapper .project-footer .pro
 }
 
 .circle {
-    width: 15px;
-    height: 15px;
+    width: 1rem;
+    height: 1rem;
 
     background-color: #E7DE79;
 
@@ -330,15 +323,15 @@ main .container .content .posts {
 
     display: flex;
     align-items: center;
+    gap: 1.25rem;
 
     border-radius: 20px;
 
-    gap: 20px;
-    padding: 30px;
+    padding: 2rem;
 
     background-color: var(--bg-cards);
 
-    font-size: 14px;
+    font-size: .875rem;
 }
 
 main .container .content .posts img {
@@ -349,19 +342,19 @@ main .container .content .posts img {
 }
 
 main .container .content .posts h1 {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 800;
 }
 
 main .container .content .posts .post-description {
-    margin-top: 28px;
+    margin-top: 1.75rem;
 
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 main .container .content .posts .post-techs {
     display: flex;
-    gap: 10px;
+    gap: .625rem;
 
-    margin: 12px 0 0 0;
+    margin: .75rem 0 0 0;
 }
