@@ -1,0 +1,255 @@
+:root {
+    --purple-bg: hsl(275, 81%, 14%);
+    --dark-bg: hsl(275, 100%, 8%);
+    --button-bg: hsl(275, 41%, 59%);
+    --white: hsl(0, 0%, 100%);
+    --light-purple: hsl(273, 100%, 98%);
+    --green: hsl(119, 100%, 65%);
+
+    --title: 'Poppins', sans-serif;
+    --paragraph: 'Roboto', sans-serif;
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+
+    background-color: var(--white);
+}
+
+body, textarea, input, select {
+    font-family: var(--paragraph);
+}
+
+header {
+    background-color: var(--purple-bg);
+    color: var(--white);
+}
+
+.active {
+    font-weight: 600;
+}
+
+.slider {
+    background-color: var(--green);
+
+    width: 2px;
+    height: 17px;
+}
+
+.divider {
+    height: 6px;
+    width: 100%;
+
+    background-color: var(--green);
+}
+
+.thin-divider {
+    background-color: var(--light-purple);
+
+    width: 470px;
+    height: 1px;
+
+    margin: 1.5rem auto;
+}
+
+button:hover, a:hover {
+    opacity: .7;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+
+    margin: 0 auto;
+
+    padding: 4rem 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 4rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.li-active {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+}
+
+nav ul li a {
+    font-size: 1.125rem;
+    color: var(--title);
+
+    transition: 300ms;
+}
+
+nav .search-box {
+    display: flex;
+    align-items: center;
+}
+
+nav .search-box input {
+    height: 2.75rem;
+    width: 230px;
+
+    background-color: var(--dark-bg);
+    color: var(--white);
+
+    border: 1px solid var(--dark-bg);
+    border-radius: .25rem 0 0 .25rem;
+
+    padding: 1.5rem;
+
+    font-size: 14px;
+}
+
+nav .search-box input::placeholder {
+    color: var(--white);
+    font-size: .875rem;
+}
+
+nav .search-box input:focus-within {
+    outline: none;
+
+    border: 1px solid var(--button-bg);
+}
+
+nav .search-box button {
+    background-color: var(--button-bg);
+
+    border: 1px solid var(--button-bg);
+    border-radius: 0 .25rem .25rem 0;
+
+    height: 50px;
+    width: 70px;
+    text-align: center;
+
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+
+    gap: 4rem;
+}
+
+.hero .left-hero h1 {
+    font: bold 2.25rem var(--title);
+    line-height: 3.375rem;
+
+    color: var(--button-bg);
+}
+
+.hero .left-hero p {
+    margin: 1rem 0 1.5rem 0;
+
+    color: var(--light-purple);
+    
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    text-align: justify;
+}
+
+.hero .left-hero a {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    background-color: transparent;
+    color: var(--button-bg);
+    
+    border: none;
+
+    font-size: 1.125rem;
+    font-weight: 800;
+
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.hero .left-hero a img {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+main .container {
+    max-width: 1200px;
+    width: 100%;
+
+    margin: 0 auto;
+
+    padding: 4rem 0;
+}
+
+main .container .top-content {
+    display: flex;
+    gap: 8.125rem;
+}
+
+.top-content .left-post .big-post {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.top-content .left-post .big-post h2, .top-content .right-post .small-post h2, .bottom-content .normal-post h2 {
+    font-weight: bold;
+    color: var(--purple-bg);
+    font-family: var(--title);
+}
+
+.top-content .left-post .big-post p, .top-content .right-post .small-post p, .bottom-content .normal-post p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+    text-align: justify;
+}
+
+.top-content .right-post .small-post {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.bottom-content {
+    display: flex;
+    gap: 2rem;
+
+    margin-top: 4rem;
+}
+
+.bottom-content .normal-post {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 87.5%;
+    }
+}
